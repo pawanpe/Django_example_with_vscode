@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %} <!-- template tag to load static files-->
+    <link rel="stylesheet" type="text/css" href="{% static 'hello/site.css' %}"/>
+    
+</head>
+<body>
+        <span class="message">
+            It's {{ date | date:'l, d F, Y' }} at {{ date | time:'H:i:s' }}
+        
+</body>
+</html>
